@@ -1,7 +1,8 @@
 const skills = [
     {
         img: "https://files.readme.io/320345b-React_Logo_256x256.png",
-        skill: "React"
+        skill: "React",
+        description: " I can build dynamic and responsive web applications, creating reusable components, managing state efficiently with Hooks or Redux, and integrating APIs for seamless data flow",
     },
     {
         img: "https://insideout.com/wp-content/uploads/2012/09/HTML5_Logo_256.png",

@@ -1,31 +1,36 @@
 import React from "react";
-import Skill from "./Skill";
-import skills from "../skills";
+
 
 function AboutMe() {
   return (
     <>
-      <h1 className="heading">Info</h1>
-      <p>
-        I’m a second-year student at the International Business-Information Academy in Tuzla. My major is Computer Science. 
-        Until now, I have put a lot of effort into almost every part of IT, and I am still craving knowledge. Now, more than 
-        ever, I want to leave a mark. I am a very pleasant and friendly person, and I love working in groups. My main focus 
-        is on programming and solving new problems because I find it the most interesting.
-      </p>
-
-      <h1 className="heading">Skills Overview</h1>
-      <div className="marque-wrapper">
-        <div className="marque-content">
-          {skills.map((skill, index) => (
-                <Skill key={index} img={skill.img} skill={skill.skill}/>
-          ))}
-        </div>
-        <div className="marque-content">
-          {skills.map((skill, index) => (
-                <Skill key={index} img={skill.img} skill={skill.skill}/>
-          ))}
-        </div>
+    <div className="about-section-wrapper">
+      <div className="about-section-title">
+        <h1>About Me</h1>
       </div>
+        <div className="about-section-content">
+          <div className="about-info">
+            <p>
+              I am a passionate and detail-oriented software developer with a strong focus on web development. With experience in front-end and back-end technologies, I specialize in building scalable, user-friendly, and efficient applications. My expertise includes JavaScript, React, .NET, C#, and database management, allowing me to develop full-stack solutions that meet modern industry standards.
+            </p>
+            <p>
+              I have a background in informatics and computer science, and I am always eager to learn and adapt to new technologies. Whether it's optimizing performance, enhancing user experience, or solving complex problems, I strive to deliver high-quality code and innovative solutions.
+            </p>
+            <p>
+              I am also experienced in working with RESTful APIs, cloud services, and modern development workflows, ensuring that the applications I build are both robust and maintainable. My goal is to continuously improve and contribute to impactful projects that make a difference.
+            </p >
+            <p>
+              <span className="highlight">Let’s connect and create something amazing!</span> 
+            </p>
+          </div>
+          <div className="about-image-container">
+
+          </div>
+        </div>
+    </div>
+      
+
+      
     </>
   );
 }

@@ -4,9 +4,12 @@ function Heading(){
     return(
         <>
         <div className="first">
-            <h1 className="name">Edis Kasumovic,</h1>
-            <h1 className="name">Full stack web developer</h1>
-            <p>With experience in front-end and back-end development, I create web applications that are user-friendly, responsive, and efficient</p>
+            <div className="name">
+                <h1>Hi I'm Edis,</h1>
+                <h1><span className="highlight">Full stack web developer</span></h1>
+            </div>
+            <h2>Based in Tuzla, Bosnia and Herzegovina</h2>
+            <h2>Specialized in <span className="highlight" >Full stack web development</span></h2>
             <button class="button-64" role="button"><span class="text">Contact Me</span></button>
         </div>
 
