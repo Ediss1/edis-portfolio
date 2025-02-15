@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Heading from './components/Heading';
 import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
+import Projects from './components/Projects.jsx';
 import Contact from './components/Contact';
 import Technologies from './components/Technologies';
 
@@ -15,7 +15,9 @@ function App() {
     <AboutMe />
     <hr></hr>
     <Technologies />
+    <hr></hr>
     <Projects />
+
     <Contact />
   </div>
   );

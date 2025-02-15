@@ -5,25 +5,28 @@ import skills from "../skills";
 function Technologies() {
 return(
     <>
+    <div className="background">
+
+    
     <div className="technologies-wrapper">
-        <div className="technologies-heading">
-            <h1 className="heading">Skills Overview</h1>
+        <div className="technologies-title">
+            <h1>Skills & Technologies</h1>
         </div>
         <div className="technologies-content">
             <div className="marque-wrapper">
                 <div className="marque-content">
                 {skills.map((skill, index) => (
-                        <Skill key={index} img={skill.img} skill={skill.skill}/>
+                        <Skill key={index} img={skill.img} skill={skill.skill} description={skill.description}/>
                 ))}
-                </div>
-                <div className="marque-content">
+                
                 {skills.map((skill, index) => (
-                        <Skill key={index} img={skill.img} skill={skill.skill}/>
+                        <Skill key={index} img={skill.img} skill={skill.skill} description={skill.description}/>
                 ))}
                 </div>
             </div>
 
         </div>
+    </div>
     </div>
     </>
 )

@@ -3,16 +3,28 @@ import React from "react";
 function Heading(){
     return(
         <>
-        <div className="first">
-            <div className="name">
-                <h1>Hi I'm Edis,</h1>
-                <h1><span className="highlight">Full stack web developer</span></h1>
-            </div>
-            <h2>Based in Tuzla, Bosnia and Herzegovina</h2>
-            <h2>Specialized in <span className="highlight" >Full stack web development</span></h2>
-            <button class="button-64" role="button"><span class="text">Contact Me</span></button>
-        </div>
+        <div className="background">
+            <div className="heading-wrapper">
+                <div className="heading-container">
+                    <div className="heading-name">
+                        <h1>Hi I'm Edis,</h1>
+                        <h1><span className="highlight">Full stack web developer</span></h1>
+                    </div>
+                    <div className="heading-location">
+                        <h2>Based in Tuzla, Bosnia and Herzegovina</h2>
+                        <h2>Specialized in <span className="highlight" >Full stack web development</span></h2>
+                    </div>
+                    <div className="heading-contact">
+                    <button class="button-64" role="button"><span class="text">Contact Me</span></button>
 
+                    </div>
+                </div>
+            </div>
+            <div className="first">
+                <div className="name">
+                </div>
+            </div>
+        </div>
         </>
     );
 }

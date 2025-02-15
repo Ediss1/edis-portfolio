@@ -9,7 +9,7 @@ function Contact (){
     return(
 
     
-    <section id="section-wrapper">
+    <section id="contact-section-wrapper">
         <div className="box-wrapper">
             <div className="info-wrap">
                 <h2 className="info-title">Contact Information</h2>
@@ -31,7 +31,7 @@ function Contact (){
                     <li>
                         <a href="www.facebook.com">
                             <i>
-                            <FontAwesomeIcon icon={faFacebook} size="xl" style={{color: "#ffffff",}} />
+                                <FontAwesomeIcon icon={faFacebook} size="xl" style={{color: "#ffffff",}} />
                             </i>
                         </a>
                 

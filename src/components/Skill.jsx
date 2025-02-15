@@ -6,8 +6,10 @@ function Skill(props){
         <>
         <div className="skill-card">
                 <img src={props.img} alt="icon" />
-                <p>{props.skill}</p>
-                <p>{props.description}</p>
+                <h3>{props.skill}</h3>
+                <div className="text">
+                    <p>{props.description}</p>
+                </div>
             </div>
         </>
     )

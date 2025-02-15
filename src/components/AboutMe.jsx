@@ -4,7 +4,7 @@ import React from "react";
 function AboutMe() {
   return (
     <>
-    <div className="about-section-wrapper">
+    <div className="">
       <div className="about-section-title">
         <h1>About Me</h1>
       </div>
