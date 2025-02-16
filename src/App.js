@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact';
 import Technologies from './components/Technologies';
+import Certificates from './components/Certificates.jsx';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
     <AboutMe />
     <hr></hr>
     <Technologies />
+    <hr></hr>
+    <Certificates />
     <hr></hr>
     <Projects />
 

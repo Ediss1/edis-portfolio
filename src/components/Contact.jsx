@@ -10,24 +10,27 @@ function Contact (){
 
     
     <section id="contact-section-wrapper">
+                <h1 className="contact-title">Contact Information</h1>
         <div className="box-wrapper">
             <div className="info-wrap">
-                <h2 className="info-title">Contact Information</h2>
-                <h3 className="info-sub-title">Fill up the form and I will contact you as soon as posible</h3>
                 <div className="info-details">
 
                 <ul>
                     <li>
-                        <span>Phone: </span> <a href="tel:+38761672380">+38761 672 380</a>
+                        <p>The secret to getting ahead is getting started.</p>
                     </li>
                     <li>
                         <span>Email: </span> <a href="mailto:ediskasumovic70@gmail.com">ediskasumovic70@gmail.com</a>
                     </li>
                     <li>
-                        <span>Phone: </span> <a href="www.facebook.com">+38761 672 380</a>
+                        <span>Phone: </span>+38761 672 380
                     </li>
                 </ul>
-                <ul className="social-icons">
+                </div>
+
+                <div className="social-icons">
+
+                <ul>
                     <li>
                         <a href="www.facebook.com">
                             <i>
@@ -58,22 +61,25 @@ function Contact (){
                     <h2 className="form-title">Send me a message</h2>
                     <div className="form-fields">
                         <div className="form-group">
-                            <input type="text" className="fname" placeholder="First Name"/>
+                            <label>Name *</label>
+                            <input type="text" className="fname" placeholder="First Name" required/>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="lname" placeholder="Last Name"/>
+                            <label>Email *</label>
+                            <input type="email" className="email" placeholder="Email" required/>
                         </div>
                         <div className="form-group">
-                            <input type="email" className="email" placeholder="Email"/>
+                            <label>Subject *</label>
+                            <input type="text" className="phone" placeholder="Subject" required/>
                         </div>
                         <div className="form-group">
-                            <input type="number" className="phone" placeholder="Phone"/>
-                        </div>
-                        <div className="form-group">
-                            <textarea name="message" id="" placeholder="Write your message here"> </textarea>
+                            <label>Message *</label>
+                            <textarea name="message" id="" placeholder="Write your message here" required> </textarea>
                         </div>
 
-                        <button type="submit" className="button-64" role="button" ><span class="text">Contact Me</span></button>
+                        <button>
+                            <a href="#" class="btn">Contact me</a>
+                        </button>
                     </div>
                 </form>
             </div>

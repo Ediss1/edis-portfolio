@@ -15,8 +15,7 @@ function Heading(){
                         <h2>Specialized in <span className="highlight" >Full stack web development</span></h2>
                     </div>
                     <div className="heading-contact">
-                    <button class="button-64" role="button"><span class="text">Contact Me</span></button>
-
+                    <a href="#" class="btn">Contact me</a>
                     </div>
                 </div>
             </div>
