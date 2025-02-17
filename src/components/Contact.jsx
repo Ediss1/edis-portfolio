@@ -1,8 +1,30 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "f0707cf5-0123-4956-afb1-9e6077860549");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
 
 function Contact (){
 
@@ -10,7 +32,7 @@ function Contact (){
 
     
     <section id="contact-section-wrapper">
-                <h1 className="contact-title">Contact Information</h1>
+                <h1 className="contact-title title">Contact Information</h1>
         <div className="box-wrapper">
             <div className="info-wrap">
                 <div className="info-details">
@@ -23,7 +45,7 @@ function Contact (){
                         <span>Email: </span> <a href="mailto:ediskasumovic70@gmail.com">ediskasumovic70@gmail.com</a>
                     </li>
                     <li>
-                        <span>Phone: </span>+38761 672 380
+                        <span>Phone: </span>+387 61 672 380
                     </li>
                 </ul>
                 </div>
@@ -32,22 +54,14 @@ function Contact (){
 
                 <ul>
                     <li>
-                        <a href="www.facebook.com">
+                        <a href="https://github.com/Ediss1" target="_blank">
                             <i>
-                                <FontAwesomeIcon icon={faFacebook} size="xl" style={{color: "#ffffff",}} />
-                            </i>
-                        </a>
-                
-                    </li>
-                    <li>
-                        <a href="www.instagram.com">
-                            <i>
-                                <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}}/>
+                                <FontAwesomeIcon icon={faGithub} size="xl" style={{color: "#ffffff",}}/>
                             </i>
                         </a>
                     </li>
                     <li>
-                        <a href="www.linkedin.com">
+                        <a href="https://www.linkedin.com/in/edis-kasumovic-501a83177/" target="_blank">
                             <i>
                                 <FontAwesomeIcon icon={faLinkedinIn} size="xl" style={{color: "#ffffff",}}/>
                             </i>
@@ -57,28 +71,25 @@ function Contact (){
                 </div>
             </div>
             <div className="form-wrap">
-                <form action="" method="POST">
+                <form onSubmit={onSubmit}>
                     <h2 className="form-title">Send me a message</h2>
                     <div className="form-fields">
                         <div className="form-group">
                             <label>Name *</label>
-                            <input type="text" className="fname" placeholder="First Name" required/>
+                            <input type="text" name="name" className="fname" placeholder="First Name" required/>
                         </div>
                         <div className="form-group">
                             <label>Email *</label>
-                            <input type="email" className="email" placeholder="Email" required/>
+                            <input type="email" name="email" className="email" placeholder="Email" required/>
                         </div>
-                        <div className="form-group">
-                            <label>Subject *</label>
-                            <input type="text" className="phone" placeholder="Subject" required/>
-                        </div>
+                        
                         <div className="form-group">
                             <label>Message *</label>
-                            <textarea name="message" id="" placeholder="Write your message here" required> </textarea>
+                            <textarea name="message" placeholder="Write your message here" required> </textarea>
                         </div>
 
-                        <button>
-                            <a href="#" class="btn">Contact me</a>
+                        <button type="submit">
+                            <i className="btn">Contact me</i>
                         </button>
                     </div>
                 </form>

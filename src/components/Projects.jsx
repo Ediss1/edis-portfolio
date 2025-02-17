@@ -6,7 +6,7 @@ function Projects() {
     return (
         <>
         <div className="projects-container">
-            <div className="projects-title">
+            <div className="projects-title title">
                 <h1>Small secrion of my projects</h1>
             </div>
             <div className="projects-content">

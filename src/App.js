@@ -8,23 +8,27 @@ import Technologies from './components/Technologies';
 import Certificates from './components/Certificates.jsx';
 
 
-function App() {
-  return (
-  <div className='container'>
-    <Heading  />
-    <hr></hr>
-    <AboutMe />
-    <hr></hr>
-    <Technologies />
-    <hr></hr>
-    <Certificates />
-    <hr></hr>
-    <Projects />
 
-    <Contact />
+
+function App() {
+  
+
+  return (
+    <div className='container'>
+      <Heading  />
+    <hr></hr>
+      <AboutMe />
+    <hr></hr>
+      <Technologies />
+    <hr></hr>
+      <Certificates />
+    <hr></hr>
+      <Projects />
+    <hr></hr>
+      <Contact />
   </div>
   );
-
+  
 }
 
 export default App;

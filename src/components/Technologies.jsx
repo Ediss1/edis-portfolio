@@ -9,7 +9,7 @@ return(
 
     
     <div className="technologies-wrapper">
-        <div className="technologies-title">
+        <div className="technologies-title title">
             <h1>Skills & Technologies</h1>
         </div>
         <div className="technologies-content">

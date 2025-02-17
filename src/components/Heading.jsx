@@ -15,12 +15,8 @@ function Heading(){
                         <h2>Specialized in <span className="highlight" >Full stack web development</span></h2>
                     </div>
                     <div className="heading-contact">
-                    <a href="#" class="btn">Contact me</a>
+                    <a href="#contact-section-wrapper" class="btn">Contact me</a>
                     </div>
-                </div>
-            </div>
-            <div className="first">
-                <div className="name">
                 </div>
             </div>
         </div>

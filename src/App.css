@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *  {
   margin: 0;
@@ -16,11 +14,15 @@
 
 .container {
   color: rgb(255, 255, 255);
-  background-color: rgb(37, 37, 37);
 }
 
-h1{
-  font-family: Arial, Helvetica, sans-serif;
+.title{
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin: 50px;
+  text-align: center;
 }
 
 .background{
@@ -60,6 +62,14 @@ h1{
 .heading-contact a{
   font-size: 1.5rem;
   padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  transition: 650ms;
+}
+
+.form-fields i{
+  font-size: 1.5rem;
+  padding: 0.6rem 2rem;
   color: white;
   text-transform: uppercase;
   transition: 650ms;
@@ -118,10 +128,9 @@ h1{
 
 .about-section-wrapper{
   width: 70%;
-  min-height: 80vh;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0 cover 25%;
   margin: auto;
 }
 
@@ -131,18 +140,13 @@ h1{
   flex-direction: row;
 }
 
-.about-section-title{
-  margin: 50px;
-  font-size: 2.5rem;
-  text-align: center;
-}
 
 .about-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
 }
 
 .about-info p{
@@ -156,16 +160,11 @@ h1{
 .technologies-wrapper {
   color: rgb(37, 37, 37);
   overflow: hidden;
+  margin: auto;
+  transition: ease-in 1s;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  margin: auto;
-}
-
-.technologies-title{
-  margin: 50px;
-  font-size: 2.5rem;
-  text-align: center;
+  animation-range: entry 0 cover 25%;
 }
 
 .technologies-content {
@@ -230,12 +229,9 @@ h1{
   width: 70%;
   min-height: 60vh;
   margin: auto;
-}
-
-.certificates-title{
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 80px auto;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
 }
 
 .certificates-content{
@@ -267,17 +263,22 @@ h1{
   padding-left: 8%;
 }
 
+.certificate-view a {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 /* projects */
 
 .projects-container{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
   border-bottom: 2px solid white;
   min-height: 80vh;
   padding-bottom: 200px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
 }
 
 .projects-title{
@@ -354,14 +355,9 @@ h1{
   width: 40%;
   margin: 35px auto;
   border-radius: 30px ;
-  
-}
-
-
-.contact-title{
-  text-align: center;
-  font-size: 28px;
-  letter-spacing: 0.5px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
 }
 
 .info-wrap {
@@ -398,8 +394,9 @@ h1{
 }
 
 .info-details p{
-  margin-bottom: 20px;
+  padding-bottom: 25px;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .social-icons{
   margin-bottom: 100px;
@@ -411,7 +408,7 @@ h1{
   font-size: 20px;
   color: white;
   border-radius: 50%;
-  margin-top: 15px;
+  padding-top: 25px;
 }
 
 .social-icons li a {
@@ -449,6 +446,8 @@ h1{
   padding-top: 10px;
 }
 
+
+
 .form-group input, textarea{
   padding: 10px;
   border-radius: 8px;
@@ -472,6 +471,20 @@ textarea{
   height: 100px;
 }
 
+.form-fields button{
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+}
+
+.form-fields a{
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  color: white;
+  text-transform: uppercase;
+  transition: 650ms;
+}
 
 
 /* ANIMATIONS */
@@ -485,44 +498,96 @@ textarea{
 @keyframes appear {
   from{
     opacity: 0;
-    scale: 0.5
-  } to {
-    opacity: 1;
+    scale: 0.5;
+  }
+  to{
+    opacity:1;
     scale: 1;
   }
 }
 
-@keyframes bgcolor{
-  from {
-    background-color: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-position-x: right;
-  } to {
-    background-size: 100% 100%;
-    background-position-x: left;
-  }
-}
 
 
 /* RESPONSIVE */
 
 @media only screen and (max-width: 767px){
-  .button-64 {
-    font-size: 24px;
-    min-width: 196px;
-  }
-  .box-wrapper{
+
+  .container{
     width: 100%;
   }
+
+  .title{
+    font-size: 1.2rem;
+    margin: 25px 0;
+  }
+
+  
+  .heading-name{
+    font-size: 1rem;
+  }
+
+  .heading-location{
+    font-size: 0.5rem;
+  }
+
+  .heading-contact a{
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    transition: 650ms;
+  }
+
+  .about-section-content{
+    flex-direction: column;
+  }
+
+  .about-info{
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill-card{
+    font-size: 0.7rem;
+    width: 200px;
+  }
+
+  .certificates-content{
+    width: 100%;
+  }
+
+  .certificate {
+    font-size: 1rem;
+  }
+
+  .projects-container{
+    width: 100%;
+  }
+
+  .project{
+    width: 250px;
+    height: 250px;
+  }
+
+  .box-wrapper{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .social-icons li{
+    float: none;
+  }
+
   .info-wrap,
   .form-wrap{
-    width: 100%;
+    width: 80%;
     height: inherit;
     float: none;
+    margin: auto;
   }
   .info-wrap{
     border-radius: 30px 30px 0 0;
+    text-align: center;
   }
   .form-wrap{
     border-radius: 30px;

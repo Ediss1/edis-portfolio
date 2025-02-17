@@ -4,7 +4,7 @@ function Certificates(){
     return (
         <>
             <div className="certificates-wrapper">
-                <div className="certificates-title">
+                <div className="certificates-title title">
                     <h1>Certificates</h1>
                 </div>
                 <div className="certificates-content">
@@ -27,7 +27,7 @@ function Certificates(){
                             <p>Full stack developer</p>
                         </div>
                         <div className="certificate-view">
-                            <p>VIEW</p>
+                            <p><a target="_blank" href="https://www.udemy.com/certificate/UC-b1ff7c8f-10c5-4b84-babf-4dffcf6bcea7/" alt="course-content">VIEW</a></p>
                         </div>
                     </div>
                 </div>

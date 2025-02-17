@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <>
     <div className="about-section-wrapper">
-      <div className="about-section-title">
+      <div className="about-section-title title">
         <h1>About Me</h1>
       </div>
         <div className="about-section-content">
@@ -20,7 +20,7 @@ function AboutMe() {
               I am also experienced in working with RESTful APIs, cloud services, and modern development workflows, ensuring that the applications I build are both robust and maintainable. My goal is to continuously improve and contribute to impactful projects that make a difference.
             </p >
             <p>
-              <span className="highlight">Let’s connect and create something amazing!</span> 
+              <span className="highlight">Let’s connect and create something amazing! 🚀</span> 
             </p>
           </div>
           <div className="about-image-container">
