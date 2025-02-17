@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/edis-portfolio/static/css/main.37e53fba.css",
+    "main.js": "/edis-portfolio/static/js/main.f61047b2.js",
+    "static/js/488.0c4ac74a.chunk.js": "/edis-portfolio/static/js/488.0c4ac74a.chunk.js",
+    "static/media/books.png": "/edis-portfolio/static/media/books.6cc8c0379b1000dd5f6f.png",
+    "static/media/keeper-app.png": "/edis-portfolio/static/media/keeper-app.eb42ea81a54c31ac4861.png",
+    "static/media/news-portal.png": "/edis-portfolio/static/media/news-portal.e8b48d82157e6bd9395d.png",
+    "static/media/to-do-app.png": "/edis-portfolio/static/media/to-do-app.fe99c356f00bc2b88560.png",
+    "static/media/inventory-mngmnt.png": "/edis-portfolio/static/media/inventory-mngmnt.4f9f5cf67a01385bbe75.png",
+    "index.html": "/edis-portfolio/index.html",
+    "main.37e53fba.css.map": "/edis-portfolio/static/css/main.37e53fba.css.map",
+    "main.f61047b2.js.map": "/edis-portfolio/static/js/main.f61047b2.js.map",
+    "488.0c4ac74a.chunk.js.map": "/edis-portfolio/static/js/488.0c4ac74a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37e53fba.css",
+    "static/js/main.f61047b2.js"
+  ]
+}
