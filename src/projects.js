@@ -9,7 +9,7 @@ const projects = [
     {
         link: "https://github.com/Ediss1/Keeper-app-with-ICP-backend",
         title: "Keeper App with ICP Backend",
-        description: "The Keeper App with ICP Backend is a decentralized note-taking application that combines a React-based frontend with a backend powered by the Internet Computer Protocol (ICP). This integration ensures data persistence and storage on the blockchain, providing users with a secure and decentralized platform for managing their notes. This project exemplifies the fusion of modern frontend frameworks with decentralized backend solutions, offering a practical approach to building Web3 applications.",
+        description: "The Keeper App with ICP Backend is a decentralized note-taking application that combines a React-based frontend with a backend powered by the Internet Computer Protocol (ICP). This project exemplifies the fusion of modern frontend frameworks with decentralized backend solutions, offering a practical approach to building Web3 applications.",
         image: keeperImage,
     },
     {

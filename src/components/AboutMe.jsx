@@ -1,4 +1,5 @@
 import React from "react";
+import edis from "../assets/edis.jpg";
 
 
 function AboutMe() {
@@ -24,7 +25,7 @@ function AboutMe() {
             </p>
           </div>
           <div className="about-image-container">
-
+            <img src={edis} alt="edis" className="about-image"/>
           </div>
         </div>
     </div>

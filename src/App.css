@@ -135,6 +135,7 @@
 }
 
 .about-section-content{
+  margin-bottom: 60px;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -153,6 +154,18 @@
   margin-bottom: 30px;
 }
 
+.about-image-container{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.about-image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: #2c2c2c 9px 9px 20px 10px;
+}
 
 
 /* SKILLS */
@@ -281,12 +294,6 @@
   animation-range: entry 0 cover 25%;
 }
 
-.projects-title{
-  margin: 50px;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
 .projects-content{
   display: flex;
   flex-direction: row;
@@ -353,11 +360,17 @@
   display: flex;
   flex-direction: row;
   width: 40%;
-  margin: 35px auto;
+  margin: 75px auto;
   border-radius: 30px ;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0 cover 25%;
+}
+
+.contact-title{
+  margin: 50px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .info-wrap {
@@ -523,11 +536,11 @@ textarea{
 
   
   .heading-name{
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .heading-location{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .heading-contact a{
@@ -545,6 +558,19 @@ textarea{
   .about-info{
     width: 100%;
     text-align: center;
+  }
+
+  .about-image-container{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .about-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: #2c2c2c 9px 9px 20px 10px;
   }
 
   .skill-card{
@@ -567,6 +593,16 @@ textarea{
   .project{
     width: 250px;
     height: 250px;
+  }
+
+  .project-info{
+    width: 250px;
+    height: 250px;
+    font-size: 11px;
+  }
+
+  .project-info span{
+    font-size: 1rem;
   }
 
   .box-wrapper{
