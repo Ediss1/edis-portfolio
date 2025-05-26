@@ -3,6 +3,7 @@ import toDoListImage from "./assets/to-do-app.png";
 import inventoryAppImage from "./assets/inventory-mngmnt.png";
 import newsAppImage from "./assets/news-portal.png";
 import keeperImage from "./assets/keeper-app.png";
+import movieAppImage from "./assets/movie-app.png";
 
 
 const projects = [
@@ -35,6 +36,12 @@ const projects = [
         title: "Inventory Management System API",
         description: "The Inventory Management System API is a backend application developed using C#. It is designed to handle the server-side operations of an inventory management system, providing endpoints for managing inventory data.",
         image: booksImage,
+    },
+    {
+        link: "https://github.com/Ediss1/MovieApp",
+        title: "MovieApp",
+        description: "This Android movie app allows users to browse popular, top-rated, and upcoming movies using data fetched from The Movie Database (TMDb) API. It supports unit testing through custom ViewModel constructors and testable dependencies.",
+        image: movieAppImage,
     },
 ]
 

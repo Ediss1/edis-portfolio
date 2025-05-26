@@ -295,6 +295,8 @@
 }
 
 .projects-content{
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
